@@ -1,7 +1,5 @@
 module.exports = {
-    configureWebpack: {
-        devServer: {
-            allowedHosts : 'all'
-        }
+    devServer: {
+      disableHostCheck: true
     }
   }
