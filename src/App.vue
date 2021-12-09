@@ -4,9 +4,7 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view v-slot="{Component}">
-    <transition name="fade">
-      <component :is="Component" />
-    </transition>
+    <component :is="Component" />
   </router-view>
 </template>
 
