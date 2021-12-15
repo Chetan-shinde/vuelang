@@ -3,9 +3,10 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
-  <router-view v-slot="{Component}">
+  <!--<router-view v-slot="{Component}">
     <component :is="Component" />
-  </router-view>
+  </router-view>-->
+  <router-view></router-view>
 </template>
 
 <style>

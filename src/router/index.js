@@ -48,7 +48,7 @@ router.beforeEach(async (to, from, next)=>{
     if(to.matched[0].props.default.language == 'en'){
       let arrOfCatUrl = ['erectile-dysnfunction', 'combined-pill', 'composition'];
       if(arrOfCatUrl.indexOf(to.params.catchAll) != -1){
-        store.commit('setCurrentComponent', {currentComponent:'Compositioncomp'})
+        store.commit('setCurrentComponent', {currentComponent:'Category'})
         await store.dispatch('actionGetCategories')
       }else{
         store.commit('setCurrentComponent', {currentComponent:'HelloWorld'})

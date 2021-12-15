@@ -4,7 +4,7 @@
         <div class="right">
             <div v-for="(feature, index) in categoryDetail.data" :key="index" class="feature-box">
                 <h4>{{ feature.feature1 }}</h4>
-                <p>{{ feature.short_txt }}</p>
+                <p class="para">{{ feature.short_txt }}</p>
             </div>
             <div class="slot-content">
                 <slot></slot>
@@ -25,3 +25,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+p.para{
+    font-size:41px;    
+}
+</style>

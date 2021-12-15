@@ -1,6 +1,6 @@
 <template>
     <div class="en-language">
-        <p>Hello UK domain</p>
+        <p class="para">Hello UK domain</p>
         <component v-bind:is="currentComponent"></component>
         <!--<Category>
             <p>This is slot content {{ item }}</p>
@@ -10,8 +10,8 @@
 </template>
 
 <script>
-//import Category from "../components/Category.vue"
-//import HelloWorld from '@/components/HelloWorld.vue'
+import Category from "../components/Category.vue"
+import HelloWorld from '@/components/HelloWorld.vue'
 //import Compositioncomp from "../components/Compositioncomp.vue";
 import { defineAsyncComponent } from 'vue'
 
@@ -23,8 +23,9 @@ export default {
     },
     components:{
         //Compositioncomp : () => import('@/components/Compositioncomp.vue') ,
-        //HelloWorld,
+        HelloWorld,
         //Compositioncomp,
+        Category,
         Compositioncomp:defineAsyncComponent(() =>
             import('../components/Compositioncomp.vue')
         )
